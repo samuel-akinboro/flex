@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f215fd3323.js" crossorigin="anonymous"></script>
+    <title>Felt</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__container">
+          <div class="left">
+            <p class="logo">FELT</p>
+            <div class="description">
+              Furniture that everyone <br /> loves
+            </div>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="right">
+            <i class="fa-solid fa-xmark"></i>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      <nav>
+      <a href="#" class="scroll-box">
+        <i class="fa-solid fa-angles-down"></i>
+      </a>
+    </header>
+    <main>
+      <section>
+       <div class="section__container">
+        <h2>About Us</h2>
+        <div class="two__columns">
+          <div class="left">
+            <h2>Who we are</h2>
+            <p>
+              We pride ourselves on being the most loved
+              Furniture store in the world.
+            </p>
+            <p>
+              We've got everyting from couches, to beds
+              to dining tables and much more.
+            </p>
+          </div>
+          <div class="right">
+            <div class="image__col">
+              <img src="/images/image-col-1.jpg" />
+            </div>
+            <div class="image__col">
+              <img src="/images/image-col-2.jpg" />
+            </div>
+            <div class="image__col">
+              <img src="/images/image-col-3.jpg" />
+            </div>
+          </div>
+        </div>
+       </div>
+      </section>
+      <section class="gallery__section">
+        <div class="section__container">
+         <h2>Gallery</h2>
+         <div class="gallery">
+            <div class="gallery__two__columns">
+              <div class="left">
+                <img src="/images/gallery1.jpg" alt="">
+              </div>
+              <div class="right">
+                <div class="small__columns">
+                  <img src="/images/gallery2.jpg" alt="">
+                </div>
+                <div class="small__columns">
+                  <img src="/images/gallery3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+         </div>
+         <div class="gallery">
+          <div class="gallery__two__columns">
+            <div class="left">
+              <img src="/images/gallery6.jpg" alt="">
+            </div>
+            <div class="right">
+              <div class="small__columns">
+                <img src="/images/gallery4.jpg" alt="">
+              </div>
+              <div class="small__columns">
+                <img src="/images/gallery5.jpg" alt="">
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form__section">
+        <div class="section__container">
+         <h2>Contact Us</h2>
+         <div class="form__container">
+           <form action="">
+             <h3>Drop us a Message</h3>
+             <label for="">Name</label>
+             <input type="text">
+             <label for="">Email</label>
+             <input type="email" name="" id="">
+             <label for="">Message</label>
+             <textarea name="" id="" cols="30" rows="10"></textarea>
+             <button>Submit</button>
+           </form>
+           <div class="image">
+             <img src="/images/contact.jpg" alt="">
+           </div>
+         </div>
+        </div>
+       </section>
+    </main>
+    <script>
+      let menuIcon = document.querySelector(".fa-bars");
+      let closeIcon = document.querySelector(".fa-xmark");
+      let sidebar = document.querySelector(".right");
+
+      menuIcon.addEventListener("click", ()=> sidebar.style.right = "0px");
+      closeIcon.addEventListener("click", ()=> sidebar.style.right = "-100%");
+    </script>
+  </body>
+</html>
