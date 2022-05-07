@@ -67,7 +67,6 @@ nav .left{
   -ms-flex-align: flex-start;
   -webkit-align-items: flex-start;
   align-items: flex-start;
-  gap: 20px;
   position: relative;
 }
 
@@ -161,6 +160,7 @@ nav .right > .fa-xmark {
     margin-top: 5px;
     border-left: 3px solid #fff;
     padding-left: 0.5em;
+    margin-left: 20px;
   }
 
   nav .left .fa-bars, nav .right .fa-xmark {
@@ -176,7 +176,6 @@ nav .right > .fa-xmark {
     flex-direction: row;
     background: transparent;
     padding: 0;
-    gap: 30px !important;
     -webkit-flex:1;
     -webkit-box-flex:1;
     -moz-flex:1;
@@ -184,6 +183,10 @@ nav .right > .fa-xmark {
     -ms-flex:1;
     flex: 1;
     justify-content: flex-end;
+  }
+
+  nav .right > * + * {
+    margin-left: 30px;
   }
 
   nav .right a{
@@ -314,7 +317,10 @@ section .section__container .two__columns .right{
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  gap: 20px;
+}
+
+section .section__container .two__columns .right > * + *{
+  margin-top: 20px;
 }
 
 section .section__container .two__columns .right .image__col{
@@ -375,8 +381,12 @@ section .section__container .two__columns .right .image__col img{
     -ms-flex: 0.80;
     flex: 0.80;
     flex-direction: row;
-    margin: 0;
+    margin: 0 0 0 40px;
     position: relative;
+  }
+
+  section .section__container .two__columns .right > * + *{
+    margin: 0 0 0 20px;
   }
 
   section .section__container .two__columns .right .image__col:nth-child(2){
@@ -500,7 +510,6 @@ section .section__container .two__columns .right .image__col img{
   display:-ms-flexbox;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   -webkit-box-align: center;
   -webkit-flex-align: center;
   -ms-flex-align: center;
@@ -525,12 +534,15 @@ section .section__container .two__columns .right .image__col img{
   display:-ms-flexbox;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   -webkit-box-align: center;
   -webkit-flex-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+.gallery__two__columns .right > * {
+  margin: 20px 0 0 0;
 }
 
 .gallery img{
@@ -573,6 +585,10 @@ section .section__container .two__columns .right .image__col img{
     margin: 0;
   }
 
+  .gallery__two__columns .right > * {
+    margin:  0 0 0 20px;
+  }
+
   .gallery__two__columns img{
     width: 100%;
     height: 100%;
@@ -588,6 +604,10 @@ section .section__container .two__columns .right .image__col img{
 
   .gallery:nth-child(3) .gallery__two__columns{
     flex-direction: row-reverse;
+  }
+
+  .gallery:nth-child(3) .gallery__two__columns .right > * {
+    margin:  0 20px 0 0;
   }
 }
 
@@ -650,7 +670,6 @@ section .section__container .two__columns .right .image__col img{
     display: flex;
     width: 100%;
     align-items: flex-start;
-    gap: 40px;
     margin-top: 5em;
     height: 619px;
     max-width: 1200px;
@@ -666,6 +685,7 @@ section .section__container .two__columns .right .image__col img{
     -ms-flex:1;
     flex: 1;
     height: 100%;
+    margin-right: 40px;
   }
 
   .form__section .image{
